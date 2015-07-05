@@ -1,15 +1,15 @@
 # Windowless Vimrun.exe
 
-This program is meant to replace the original vimrun.exe provided with GVim for Windows.
-The original vimrun.exe will make a console window flash in the background
+This program is meant to replace the original `vimrun.exe` provided with GVim for Windows.
+The original `vimrun.exe` will make a console window flash in the background
 which is annoying and slows down command execution.
 
-Windowless Vimrun is able to execute a command in the background without
-flashing a window when the `-s` flag is provided:
+This version of `vimrun.exe` is able to execute a command in the background without
+flashing a window when the `-s` flag is provided.
 
 ## Installation
 
-- [Download](https://github.com/2072/Windowless-vimrun/downloads) `vimrun.exe`.
+- [Download](https://github.com/2072/Windowless-vimrun/releases) the `vimrun.exe` binary (available in 32 bit and 64 bit).
 - Drop it anywhere in your PATH before GVim's directory or simply replace the original `vimrun.exe`.
 
 ## Limitations:
