@@ -12,6 +12,20 @@ flashing a window when the `-s` flag is provided.
 - [Download](https://github.com/2072/Windowless-vimrun/releases) the `vimrun.exe` binary (available in 32 bit and 64 bit).
 - Drop it anywhere in your PATH before GVim's directory or simply replace the original `vimrun.exe`.
 
+- add the following commands to your .vimrc:
+
+```
+:set shellxescape-=\>
+:set shellxescape-=\&
+```
+
+These are used to tell VIm which characters to escape when sending commands to
+the shell (cmd.exe). Unfortunately many plug-ins are not using these correctly
+and end up escaping output redirection commands which then cause them to
+fail... I'm not sure why this works when using the default vimrun.exe, maybe
+some 'helpful' Microsoft compatibility magic is taking place when using the
+system() API call...
+
 ## Limitations:
 
 This program has some limitations and requires `cmd.exe` to be used as shell
